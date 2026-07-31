@@ -1,7 +1,5 @@
 # Validation Note
 
-Suggested structure:
-
 ## What was tested
 - Distributor check in call with Purina's distributors Meadow Distribution.
 - Word document with notes from the meeting were used for the skill
