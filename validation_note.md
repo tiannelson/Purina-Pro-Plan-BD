@@ -1,7 +1,5 @@
 # Validation Note
 
-_Placeholder — to be filled in._
-
 Suggested structure:
 
 ## What was tested
