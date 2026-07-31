@@ -1,3 +1,7 @@
 # GRASP Brief 2
 
-_Placeholder — to be filled in._
+**Goal**: Create a skill that turns raw Business Development (BD) meeting notes into a memo that connects what happened in the meeting with what is currently happening in the market in one pass. Each output memo must do both jobs together: summarize what was actually discussed and decided, and recommend a next step shaped by the search results, with a real, stated link between the two.
+**Resources**: The 4 real Purina meeting notes (docx), plus the deliberately vague test meeting used for QA. The bd-market-memo Skill itself, the packaged judgment calls (what counts as a complete follow-up; what search results are worth including) that the script applies uniformly. Live web search. A scripting environment.
+**Autonomy Limits**: The script decides on its own, per meeting, without pausing: which entities to extract, which searches to run, which results are relevant. I control, which meeting files go into the batch, the Skill's judgment rules, and whether any memo's recommendations get acted on afterward. Hard limit from testing, the batch cannot be trusted to run fully unattended and have every output acted on without review.
+**Sign-off Point**: Before any batch output is acted on, a human scans the Recommended Actions section of every memo in that run, specifically checking that each named owner, date, and action traces back to something actually in that meeting's notes.
+**Proof**: The script runs across the full folder of meeting notes and produces one memo per meeting without manual intervention between files. No memo has meeting notes and market signals sitting in separate sections with no stated connection between them.
